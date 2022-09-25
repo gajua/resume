@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 1000px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+}
+header h1{
+  padding: 40px 0 0 40px;
+  width: 250px;
+  font-size: 40px;
+}
+.name p{
+  padding: 20px 0 0 40px;
+}
+.info{
+  margin-top: 20px;
+  padding: 40px;
+}
+p{
+  font-size: 18px;
+}
+.info a {
+  text-decoration: none;
+}
+main{
+  border: 1px solid #000;
+  height: 45vh;
+}
