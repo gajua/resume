@@ -1,40 +1,138 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  border: 5px solid #000;
 }
 .container {
-  margin: 4.5% 10%;
-  border: 1px solid #000;
+  margin: 50px 16%;
+  width: 1130px;
+  margin: 0 auto;
 }
 .header {
   border-bottom: 1px solid #000;
-  padding: 15px 35px;
+  padding: 15px 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  background-color: #eff0f4;
 }
-.header .logo{
+.header .logo {
   font-weight: 700;
   font-size: 1.8em;
 }
 .header .head-nav ul {
-  border: 1px solid #000;
   display: flex;
   gap: 20px;
   letter-spacing: 0.1em;
-font-size: 1.1em;
-font-weight: 500;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 .header a {
   font-weight: 600;
-  border: 2px solid #000;
   text-decoration: none;
   color: #000;
   font-size: 1.2em;
   padding: 3px 12px;
 }
-.info-sec{
+/* 소개 섹션 */
+.info-sec {
+  position: relative;
   display: flex;
+  padding: 15px 100px;
+  justify-content: space-between;
+  min-height: 70vh;
+  background-color: #eff0f4;
+}
+.info-txt {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  gap: 20px;
+}
+
+.info-txt h2 {
+  position: relative;
+  font-size: 4.1em;
+  word-break: keep-all;
+  width: 700px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  z-index: 10;
+}
+.info-txt h2::before {
+  position: relative;
+  content: "";
+  display: block;
+  width: 23%;
+  left: 7px;
+  height: 5px;
+  background-color: red;
+}
+
+.info-txt p {
+  font-size: 1em;
+  color: #333;
+  font-weight: 400;
+}
+.info-txt button {
+  width: 200px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1em;
+}
+.sns-btn ul {
+  margin-top: 65px;
+  width: 280px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 1.75em;
+  transition: 0.5s;
+  gap: 30px;
+}
+.sns-btn ul li a {
+  color: #333;
+  transition: 0.3s;
+}
+.sns-btn ul li a:hover {
+  color: #00bcd4;
+}
+.info-sec img {
+  position: absolute;
+  margin: 68px 0;
+  right: 10%;
+  width: 35%;
+}
+.info-sec > button {
+  position: relative;
+  top: 100px;
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5em;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+
+}
+
+/* 프로젝트 섹션 */
+
+.project-sec{
+  min-height: 70vh;
 }

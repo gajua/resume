@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
@@ -13,25 +13,48 @@
         <h1 class="logo">Se-Won</h1>
         <nav class="head-nav">
           <ul>
-            <li>홈</li>
-            <li>프로젝트</li>
-            <li>개인 이력</li>
+            <li><a href="#Home">홈</a></li>
+            <li><a href="#projectSection">프로젝트</a></li>
+            <li><a href="#">개인이력</a></li>
           </ul>
         </nav>
         <a href="">contact</a>
       </header>
       <main>
-        <section class="info-sec">
+        <section id="Home" class="info-sec">
           <div class="info-txt">
             <h2>팀원과 즐거울줄 아는 개발자입니다!</h2>
             <p>저와 일을 하시면 지금보다 3 배는 더 즐겁게 일을 하실겁니다!</p>
-            <button></button>
-            <div class="Sns-btn"></div>
+            <button>버튼</button>
+            <div class="sns-btn">
+              <ul>
+                <li>
+                  <a href="" target="_blank"
+                    ><ion-icon name="logo-facebook"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"
+                    ><ion-icon name="logo-instagram"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/gajua" target="_blank"
+                    ><ion-icon name="logo-github"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"
+                    ><ion-icon name="logo-linkedin"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <img src="" alt="" />
-          <button></button>
+          <img src="./img/이력서사진.jpg" alt="프로필사진" />
+          <button><ion-icon name="chevron-down-outline"></ion-icon></button>
         </section>
-        <section class="project-sec">
+        <section id="projectSection" class="project-sec">
           <h2>프로젝트</h2>
           <ul>
             <li></li>
@@ -42,13 +65,15 @@
         <section>
           <h2>개인 이력</h2>
           <ul>
-            <li>같이 성장하는것을 좋아합니다! 50명이 넘는 동료들 앞에서 강의를 한 경험이 있습니다!</li>
             <li>
-              책을 집필한 경험이 있습니다! 자바스크립트의 DOM을 주제로 한 책을 공동집필 했습니다!
+              같이 성장하는것을 좋아합니다! 50명이 넘는 동료들 앞에서 강의를 한
+              경험이 있습니다!
             </li>
             <li>
-              SQL을 연습할 수 있는 오픈소스 공동제작에 참여했어요!
+              책을 집필한 경험이 있습니다! 자바스크립트의 DOM을 주제로 한 책을
+              공동집필 했습니다!
             </li>
+            <li>SQL을 연습할 수 있는 오픈소스 공동제작에 참여했어요!</li>
           </ul>
         </section>
       </main>
@@ -60,14 +85,29 @@
             <li>개인 이력</li>
           </ul>
         </nav>
-        <div class="Sns-btn">
+        <div class="sns-btn">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+            <li>
+              <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
           </ul>
         </div>
       </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
