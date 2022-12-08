@@ -49,15 +49,19 @@ section {
 .info-sec {
   position: relative;
   display: flex;
-
   justify-content: space-between;
   min-height: 70vh;
   background-color: #eff0f4;
 }
+.my-name{
+  font-size: 2em;
+  font-weight: 700;
+  color: #2c363f;
+}
 .info-txt {
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 100px;
   gap: 20px;
 }
 
@@ -96,7 +100,7 @@ h2::before {
   font-size: 1.1em;
 }
 .sns-btn ul {
-  margin-top: 65px;
+  margin-top: 30px;
   width: 280px;
   height: 60px;
   display: flex;
@@ -161,7 +165,7 @@ h2::before {
 }
 .project-list > li {
   display: flex;
-  border: 2px solid #eff0f4;
+  background-color: #eff0f4;
   height: 380px;
   margin: 35px 0;
 }
@@ -183,16 +187,19 @@ h2::before {
 .project-tit{
   font-size: 2.5em;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  color: #eff0f4;
+  letter-spacing: 0.05em;
+  color: #2c363f;
+  word-break: keep-all;
 }
 .project-info p {
   width: 100%;
+  color: #2c363f;
+  word-break: keep-all;
 }
 .project-link{
-  color: #2c363f;
+  color: #eff0f4;
   padding: 10px 16px;
-  background-color: #fff;
+  background-color: #2c363f;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 700;
@@ -213,7 +220,7 @@ h2::before {
   height: 30px;
 }
 .project-link:hover {
- background: rgba(255, 255, 255, 0.7);
+ background: rgba(0, 0, 0, 0.5);
 }
 
 
