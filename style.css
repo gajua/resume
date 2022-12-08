@@ -269,6 +269,16 @@ word-break: keep-all;
 margin-top: 20px;
 }
 
+.personal-txt .project-link{
+  margin-top: 20px;
+  background-color: #eff0f4;
+  color: #2c363f;
+}
+.personal-txt .project-link:hover{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
 .personal-btn{
   text-align: right;
 }
