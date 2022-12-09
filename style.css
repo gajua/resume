@@ -246,9 +246,12 @@ h2::before {
   font-weight: 700;
   color: #2c363f;
 }
+.personal-sec p{
+  margin: 20px 0;
+}
 .personal-list {
   /* display: flex; */
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .personal-list li{
   display: flex;
@@ -272,6 +275,7 @@ h2::before {
 }
 .personal-txt p {
   color: #fff;
+
 font-size: 1em;
 font-weight: 300;
 word-break: keep-all;
