@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RESUME</title>
     <link rel="stylesheet" href="./style.css" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
       
       <header class="header">
-        <h1 class="logo">Se-Won.</h1>
+        <h1 class="logo">Se_Won.</h1>
         <nav class="head-nav">
           <ul>
             <li><a href="#Home">메인</a></li>
@@ -65,7 +65,7 @@
            저의 프로젝트입니다. 웹 접근성과 UX를 최대한 고려햐여 시멘틱한 태그를 사용하였고 모두 직접 디자인했습니다.
           </p>
           <ul class="project-list">
-            <li>
+            <li data-aos="fade-right">
               <img src="./img/제주오름프로젝트.png" alt="프로젝트" />
               <div class="project-info">
                 <ul class="project-stack-list">
@@ -87,7 +87,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li data-aos="fade-left">
               <img src="./img/제주오름프로젝트.png" alt="프로젝트" />
               <div class="project-info">
                 <ul class="project-stack-list">
@@ -109,7 +109,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li data-aos="fade-right">
               <img src="./img/제주오름프로젝트.png" alt="프로젝트" />
               <div class="project-info">
                 <ul class="project-stack-list">
@@ -137,7 +137,7 @@
           <h2>개인 이력</h2>
           <p>함께하기를 좋아하는 저는 같이 성장하기 위해 이러한 일을 참여했습니다.</p>
           <ul class="personal-list">
-            <li>
+            <li data-aos="fade-up">
               <img src="./img/동료특강.png" alt="동료특강사진" />
               <div class="personal-txt">
                 <h3>동료특강</h3>
@@ -150,7 +150,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li data-aos="fade-up">
               <img src="./img/책 집필.png" alt="책 집필 사진" />
               <div class="personal-txt">
                 <h3>책 집필</h3>
@@ -167,7 +167,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li data-aos="fade-up">
               <img src="./img/sql.png" alt="SQL튜토리얼 이미지" />
               <div class="personal-txt">
                 <h3>SQL 튜토리얼 사이트 제작</h3>
@@ -185,14 +185,6 @@
               </div>
             </li>
           </ul>
-          <div class="personal-btn">
-            <button>
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </button>
-            <button>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </button>
-          </div>
         </section>
       </main>
       <footer>
@@ -227,5 +219,10 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- cdn -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>

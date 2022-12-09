@@ -241,13 +241,14 @@ h2::before {
 
 .personal-sec h2{
   width: 400px;
-  padding: 60px 0 0;
+  padding: 60px 0 0px;
   font-size: 3em;
   font-weight: 700;
   color: #2c363f;
 }
 .personal-list {
   /* display: flex; */
+  padding: 40px 0;
 }
 .personal-list li{
   display: flex;
