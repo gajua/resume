@@ -349,8 +349,42 @@ footer .sns-btn ul{
 
 /* modal */
 .modal{
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 500px;
   border: 1px solid #000;
+  background-color: #eff0f4;
+  box-shadow: 3px 0 7px 1px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
   
+}
+.modal header{
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  color: #2c363f;
+}
+.modal header button{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal header button .close-icon{
+  font-size: 2em;
+  color: #333;
+}
+.modal header button:hover{
+  background-color: #e6e6e6;
 }
 ::-webkit-scrollbar {
   width: 12px;
