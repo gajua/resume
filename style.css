@@ -318,7 +318,40 @@ h2::before {
 }
 
 /* footer 시작 */
+footer{
+  border-top: 2px solid #2c363f;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #eff0f4;
+}
+footer ul{
+  display: flex;
+  gap: 20px;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+footer ul li a{
+  color: #2c363f;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+footer .sns-btn ul{
+  width: 200px;
+  justify-content: space-between;
+  margin: 0;
+}
 
+
+/* modal */
+.modal{
+  border: 1px solid #000;
+  
+}
 ::-webkit-scrollbar {
   width: 12px;
 }
