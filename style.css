@@ -318,7 +318,7 @@ h2::before {
 }
 
 /* footer 시작 */
-footer{
+footer {
   border-top: 2px solid #2c363f;
   padding: 20px 100px;
   display: flex;
@@ -327,49 +327,53 @@ footer{
   margin-bottom: 40px;
   background-color: #eff0f4;
 }
-footer ul{
+footer ul {
   display: flex;
   gap: 20px;
   letter-spacing: 0.1em;
   font-size: 1.1em;
   font-weight: 500;
 }
-footer ul li a{
+footer ul li a {
   color: #2c363f;
   text-decoration: none;
   font-size: 0.9em;
   font-weight: 400;
 }
-footer .sns-btn ul{
+footer .sns-btn ul {
   width: 200px;
   justify-content: space-between;
   margin: 0;
 }
 
-
 /* modal */
-.modal{
+.modal {
   position: fixed;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-  height: 500px;
+  width: 800px;
+  height: 670px;
   border: 1px solid #000;
   background-color: #eff0f4;
   box-shadow: 3px 0 7px 1px rgba(0, 0, 0, 0.7);
   z-index: 1000;
-  
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 1)),
+    url(./img/스터디사진.jpg);
+  background-size: contain;
+  background-position: 0px 70px;
+  background-repeat: no-repeat;
 }
-.modal header{
+.modal header {
   border-bottom: 1px solid #777;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
   color: #2c363f;
 }
-.modal header button{
+.modal header button {
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -379,12 +383,19 @@ footer .sns-btn ul{
   justify-content: center;
   align-items: center;
 }
-.modal header button .close-icon{
+.modal header button .close-icon {
   font-size: 2em;
   color: #333;
 }
-.modal header button:hover{
+.modal header button:hover {
   background-color: #e6e6e6;
+}
+.modal .modal-info {
+  padding: 15px;
+  float: right;
+  width: 100%;
+  height: calc(100% - 100px);
+  backdrop-filter: blur(5px);
 }
 ::-webkit-scrollbar {
   width: 12px;
