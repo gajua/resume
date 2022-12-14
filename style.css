@@ -199,7 +199,7 @@ h2::before {
 .project-stack-list {
   display: flex;
 }
-.project-stack-list li img{
+.project-stack-list li img {
   width: fit-content;
   height: 30px;
 }
@@ -414,14 +414,15 @@ footer .sns-btn ul {
   border: 2px solid transparent;
 }
 
-
-
 /* 반응형 */
 @media (max-width: 1000px) {
-  section{
+  body{
+    overflow-x: hidden;
+  }
+  section {
     padding: 10px 20px;
   }
-  .header{
+  .header {
     padding: 10px 50px;
     justify-content: space-around;
   }
@@ -430,11 +431,11 @@ footer .sns-btn ul {
     font-size: 0.8em;
     word-break: keep-all;
   }
-  .header p{
+  .header p {
     display: none;
   }
 
-  .info-sec{
+  .info-sec {
     /* flex-direction: column; */
   }
   .info-txt h2 {
@@ -442,7 +443,7 @@ footer .sns-btn ul {
     word-break: initial;
     width: 400px;
   }
-  .info-sec .sewon-img{
+  .info-sec .sewon-img {
     /* width: 200px; */
     /* height: 400px; */
     width: 130px;
@@ -453,41 +454,40 @@ footer .sns-btn ul {
     border-radius: 50%;
     /* display: none; */
   }
-  .info-sec > button{
+  .info-sec > button {
     display: none;
   }
 
   /* 프로젝트 섹션 */
-  .project-list > li{
+  .project-list > li {
     flex-direction: column;
     width: 400px;
     height: 830px;
     min-width: 500px;
     margin: 20px auto;
   }
-  .project-list > li img{
+  .project-list > li img {
     /* width: 100%; */
-    min-width:100% ;
+    min-width: 100%;
     object-fit: contain;
     height: 50%;
   }
   .project-list > li:nth-child(even) {
     flex-direction: column;
   }
-  .project-info{
+  .project-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .project-info p{
+  .project-info p {
     min-width: 300px;
     display: flex;
-   
   }
-  .project-stack-list{
+  .project-stack-list {
     height: 50px;
   }
-/* 개인이력 섹션 */
+  /* 개인이력 섹션 */
   .personal-list li {
     flex-direction: column;
     width: 400px;
@@ -495,12 +495,11 @@ footer .sns-btn ul {
     min-width: 500px;
     margin: 20px auto;
   }
-  .personal-list li img{
-    min-width:100% ;
+  .personal-list li img {
+    min-width: 100%;
   }
 
-
-  footer{
+  footer {
     padding: 10px 30px;
   }
   footer ul {
