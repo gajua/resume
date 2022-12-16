@@ -345,7 +345,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
   background-color: #eff0f4;
 }
 footer ul {
@@ -382,13 +381,14 @@ footer .sns-btn ul {
   height: 430px;
   border: 3px solid #2c363f;
   background-color: #eff0f4;
-  box-shadow: 3px 0 1000px 10000px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 0 1000px 1000px rgba(0, 0, 0, 0.7);
   z-index: 1000;
   background-image: linear-gradient(transparent, rgba(255, 255, 255, 1)),
     url(./img/스터디사진.jpg);
   background-size: contain;
   background-position: 0px 70px;
   background-repeat: no-repeat;
+  transition: 0.2s;
 }
 .modal header {
   border-bottom: 1px solid #777;
@@ -511,10 +511,7 @@ footer .sns-btn ul {
     margin: 20px auto;
   }
   .project-list > li img {
-    /* width: 100%; */
     min-width: 100%;
-    /* object-fit: contain; */
-    /* height: 50%; */
     max-height: 40%;
   }
   .project-list > li:nth-child(even) {
