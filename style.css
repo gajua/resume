@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -59,10 +59,17 @@ section {
   min-height: 70vh;
   background-color: #eff0f4;
 }
+.name{
+  display: flex;
+  gap: 104px;
+  color: #2c363f;
+}
 .my-name {
   font-size: 2em;
   font-weight: 700;
-  color: #2c363f;
+}
+.contact li{
+  list-style: disc;
 }
 .info-txt {
   display: flex;
@@ -83,7 +90,7 @@ section {
 }
 h2::before {
   position: relative;
-  content: '';
+  content: "";
   display: block;
   width: 23%;
   height: 5px;
@@ -96,7 +103,7 @@ h2::before {
   color: #2c363f;
   z-index: 10;
 }
-.info-txt .about-me{
+.info-txt .about-me {
   display: flex;
   flex-direction: column;
 }
@@ -195,7 +202,7 @@ h2::before {
 .project-list > li:nth-child(even) {
   flex-direction: row-reverse;
 }
-.project-list > li:nth-child(even) .project-info{
+.project-list > li:nth-child(even) .project-info {
   width: 100%;
 }
 .project-info {
@@ -361,20 +368,21 @@ footer .sns-btn ul {
 }
 
 /* modal */
-.modal.active{
+.modal.active {
   display: block;
 }
 .modal {
   display: none;
   position: fixed;
+  border-radius: 30px;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
-  height: 630px;
-  border: 1px solid #000;
+  height: 430px;
+  border: 3px solid #2c363f;
   background-color: #eff0f4;
-  box-shadow: 3px 0 7px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 0 1000px 10000px rgba(0, 0, 0, 0.7);
   z-index: 1000;
   background-image: linear-gradient(transparent, rgba(255, 255, 255, 1)),
     url(./img/스터디사진.jpg);
@@ -409,11 +417,33 @@ footer .sns-btn ul {
   background-color: #e6e6e6;
 }
 .modal .modal-info {
-  padding: 15px;
+  padding: 25px;
   float: right;
   width: 100%;
   height: calc(100% - 100px);
   backdrop-filter: blur(5px);
+}
+.modal .modal-info ul{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal .modal-info ul li{
+  font-size: 1.2em;
+  color: #2c363f;
+  font-weight: 800;
+}
+.modal .modal-info ul li:nth-child(even){
+  text-align: end;
+}
+.modal-info-txt{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  word-break: keep-all;
+  line-height: 1.6;
 }
 ::-webkit-scrollbar {
   width: 12px;
@@ -427,7 +457,7 @@ footer .sns-btn ul {
 
 /* 반응형 */
 @media (max-width: 904px) {
-  body{
+  body {
     overflow-x: hidden;
   }
   section {
@@ -445,41 +475,38 @@ footer .sns-btn ul {
   .header p {
     display: none;
   }
-
-  .info-sec {
-    /* flex-direction: column; */
+  .info-sec{
+    min-height: 50vh;
+  }
+  .info-txt{
+    padding-top: 60px;
   }
   .info-txt h2 {
     font-size: 3.2em;
-    width: 400px;
+    width: 459px;
   }
   .info-sec .sewon-img {
-    /* width: 200px; */
-    /* height: 400px; */
-    width: 130px;
-    height: 130px;
-    /* right: 10px; */
-    object-fit: none;
-    background-size: 10px;
+    min-width: 130px;
+    top: 0px;
+    right: 46px;
     border-radius: 50%;
-    /* display: none; */
   }
   .info-sec > button {
     display: none;
   }
-  .info-txt .about-me{
-    flex-direction: row; 
+  .info-txt .about-me {
+    flex-direction: row;
     gap: 30px;
     align-items: center;
   }
-  .sns-btn ul{
+  .sns-btn ul {
     transform: translateY(-20%);
   }
   /* 프로젝트 섹션 */
   .project-list > li {
     flex-direction: column;
     width: 400px;
-    height: 830px;
+    height: 730px;
     min-width: 500px;
     margin: 20px auto;
   }
@@ -503,7 +530,8 @@ footer .sns-btn ul {
     display: flex;
   }
   .project-stack-list {
-    height: 50px;
+    height: 40px;
+    align-items: center;
   }
   /* 개인이력 섹션 */
   .personal-list li {
@@ -522,5 +550,8 @@ footer .sns-btn ul {
   }
   footer ul {
     gap: 5px;
+  }
+  .modal{
+    width: 670px;
   }
 }
