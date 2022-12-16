@@ -16,7 +16,7 @@ section {
 }
 .container {
   margin: 50px 16%;
-  max-width: 1130px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .header {
@@ -94,6 +94,11 @@ h2::before {
   font-size: 1em;
   font-weight: 400;
   color: #2c363f;
+  z-index: 10;
+}
+.info-txt .about-me{
+  display: flex;
+  flex-direction: column;
 }
 .info-txt .modal-btn {
   width: 200px;
@@ -128,8 +133,8 @@ h2::before {
 .info-sec .sewon-img {
   position: relative;
   margin: 68px 0;
-  right: 200px;
-  width: 400px;
+  right: 273px;
+  width: 365px;
   object-fit: contain;
 }
 .info-sec > button {
@@ -173,7 +178,7 @@ h2::before {
 }
 .project-sec p {
   width: 400px;
-  margin: 20px 0;
+  margin: 10px 0;
   color: #fff;
   word-break: keep-all;
 }
@@ -190,11 +195,13 @@ h2::before {
 .project-list > li:nth-child(even) {
   flex-direction: row-reverse;
 }
-
+.project-list > li:nth-child(even) .project-info{
+  width: 100%;
+}
 .project-info {
   text-align: left;
-  width: 45%;
-  margin: auto;
+  max-width: fit-content;
+  margin: 20px 15px;
 }
 .project-stack-list {
   display: flex;
@@ -271,7 +278,8 @@ h2::before {
   border: 2px solid #2c363f;
 }
 .personal-list li img {
-  width: 450px;
+  /* width: 450px; */
+  width: 50%;
 }
 .personal-txt {
   padding: 20px;
@@ -353,6 +361,9 @@ footer .sns-btn ul {
 }
 
 /* modal */
+.modal.active{
+  display: block;
+}
 .modal {
   display: none;
   position: fixed;
@@ -360,7 +371,7 @@ footer .sns-btn ul {
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
-  height: 670px;
+  height: 630px;
   border: 1px solid #000;
   background-color: #eff0f4;
   box-shadow: 3px 0 7px 1px rgba(0, 0, 0, 0.7);
@@ -415,7 +426,7 @@ footer .sns-btn ul {
 }
 
 /* 반응형 */
-@media (max-width: 1000px) {
+@media (max-width: 904px) {
   body{
     overflow-x: hidden;
   }
@@ -440,7 +451,6 @@ footer .sns-btn ul {
   }
   .info-txt h2 {
     font-size: 3.2em;
-    word-break: initial;
     width: 400px;
   }
   .info-sec .sewon-img {
@@ -457,7 +467,14 @@ footer .sns-btn ul {
   .info-sec > button {
     display: none;
   }
-
+  .info-txt .about-me{
+    flex-direction: row; 
+    gap: 30px;
+    align-items: center;
+  }
+  .sns-btn ul{
+    transform: translateY(-20%);
+  }
   /* 프로젝트 섹션 */
   .project-list > li {
     flex-direction: column;
@@ -469,8 +486,9 @@ footer .sns-btn ul {
   .project-list > li img {
     /* width: 100%; */
     min-width: 100%;
-    object-fit: contain;
-    height: 50%;
+    /* object-fit: contain; */
+    /* height: 50%; */
+    max-height: 40%;
   }
   .project-list > li:nth-child(even) {
     flex-direction: column;
