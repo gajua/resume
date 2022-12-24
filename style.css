@@ -388,6 +388,9 @@ footer .sns-btn ul {
 }
 
 /* modal */
+body.active button{
+  
+}
 .modal.active {
   display: block;
 }
