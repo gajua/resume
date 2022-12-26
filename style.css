@@ -19,14 +19,14 @@ section {
 }
 .container {
   margin: 50px 16%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .header {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   width: 100%;
-  border-bottom: 1px solid #2c363f;
+  border-bottom: 1px solid #f98037;
   padding: 15px 100px;
   display: flex;
   justify-content: space-between;
@@ -92,6 +92,13 @@ section {
 .contact li{
   list-style: disc;
 }
+.contact li::marker {
+  color: #f98037; 
+}
+.contact li a{
+  color: #2c363f;
+  font-size: large;
+}
 .info-txt {
   display: flex;
   flex-direction: column;
@@ -108,15 +115,16 @@ section {
   font-weight: 700;
   z-index: 10;
   color: #2c363f;
+  -webkit-text-stroke: 1px #fff;
 }
-h2::before {
+/* h2::before {
   position: relative;
   content: "";
   display: block;
   width: 23%;
   height: 5px;
-  background-color: #2c363f;
-}
+  background-color: #f98037;
+} */
 
 .info-txt p {
   font-size: 1em;
@@ -156,12 +164,12 @@ h2::before {
   transition: 0.3s;
 }
 .sns-btn ul li a:hover {
-  color: #00bcd4;
+  color: #f98037;
 }
 .info-sec .sewon-img {
   position: relative;
   margin: 68px 0;
-  right: 273px;
+  right: 135px;
   width: 365px;
   object-fit: contain;
 }
@@ -178,7 +186,7 @@ h2::before {
   font-size: 2.5em;
   font-weight: 700;
   cursor: pointer;
-  background-color: #2c363f;
+  background-color: #f98037;
 }
 .info-sec > button a {
   color: #fff;
@@ -359,9 +367,14 @@ h2::before {
   background-color: #00bcd4;
 }
 
+/* 학력 및 경력시작 */
+.certificate{
+  border: 1px solid #000;
+}
+
 /* footer 시작 */
 footer {
-  border-top: 2px solid #2c363f;
+  border-top: 1px solid #f98037;
   padding: 20px 100px;
   display: flex;
   justify-content: space-between;
@@ -480,7 +493,7 @@ body.active button{
 }
 
 /* 반응형 */
-@media (max-width: 904px) {
+@media (max-width: 1000px) {
   body {
     overflow-x: hidden;
   }
@@ -495,9 +508,6 @@ body.active button{
     gap: 15px;
     font-size: 0.8em;
     word-break: keep-all;
-  }
-  .header p {
-    display: none;
   }
   .info-sec{
     min-height: 50vh;
