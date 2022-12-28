@@ -7,6 +7,9 @@
   list-style: none;
   font-family: "Noto Sans KR", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 img{
   object-fit: cover;
 }
@@ -461,7 +464,9 @@ footer ul li a {
   font-weight: 400;
 }
 footer .sns-btn ul {
-  width: 200px;
+  position: relative;
+  right: 40px;
+  width: 50px;
   justify-content: space-between;
   margin: 0;
 }
@@ -589,9 +594,9 @@ body.active button{
     min-width: 130px;
     top: 0px;
     right: 46px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
-  .info-sec > button {
+  .info-sec .top-btn {
     display: none;
   }
   .info-txt .about-me {
