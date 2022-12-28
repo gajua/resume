@@ -224,7 +224,7 @@ section {
 .project-list > li {
   display: flex;
   background-color: #eff0f4;
-  height: 380px;
+  height: 400px;
   margin: 35px 0;
 }
 .project-list > li img {
@@ -259,9 +259,9 @@ section {
 .project-info p {
   width: 100%;
   font-size: 12px;
-
   color: #2c363f;
   word-break: keep-all;
+  margin: 5px 0;
 }
 .project-info .skil-info {
   position: relative;
