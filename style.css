@@ -7,10 +7,10 @@
   list-style: none;
   font-family: "Noto Sans KR", sans-serif;
 }
-body{
+body {
   overflow-x: hidden;
 }
-img{
+img {
   object-fit: cover;
 }
 html {
@@ -50,7 +50,7 @@ section {
   font-size: 1.1em;
   font-weight: 500;
 }
-.header ul li a{
+.header ul li a {
   position: relative;
   text-align: center;
 }
@@ -83,7 +83,7 @@ section {
   min-height: 70vh;
   background-color: #eff0f4;
 }
-.name{
+.name {
   display: flex;
   gap: 104px;
   color: #2c363f;
@@ -92,13 +92,13 @@ section {
   font-size: 2em;
   font-weight: 700;
 }
-.contact li{
+.contact li {
   list-style: disc;
 }
 .contact li::marker {
-  color: #f98037; 
+  color: #f98037;
 }
-.contact li a{
+.contact li a {
   color: #2c363f;
   font-size: large;
 }
@@ -272,7 +272,7 @@ section {
   gap: 5px;
   margin: 16px 0;
 }
-.project-info .skil-info li{
+.project-info .skil-info li {
   word-break: keep-all;
   list-style-type: disc;
   font-size: 18px;
@@ -386,44 +386,44 @@ section {
   background-color: #00bcd4;
 }
 
-.skill-sec{
+.skill-sec {
   background-color: #eff0f4;
   border-top: 1px solid #777;
 }
-.skill-sec h2{
+.skill-sec h2 {
   font-size: 28px;
 }
-.skill-list{
+.skill-list {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.skill-list>li>span{
+.skill-list > li > span {
   width: 150px;
   font-size: 1.2em;
   font-weight: 700;
 }
-.skill-list>li li{
+.skill-list > li li {
   list-style: circle;
 }
-.skill-list .frontend{
+.skill-list .frontend {
   display: flex;
   gap: 20px;
 }
-.skill-list .tools{
+.skill-list .tools {
   display: flex;
   gap: 20px;
 }
 /* 학력 및 경력시작 */
-.certificate{
+.certificate {
   display: flex;
   flex-direction: column;
   gap: 30px;
   background-color: #eff0f4;
   padding-bottom: 60px;
 }
-.certificate h2{
+.certificate h2 {
   font-size: 28px;
 }
 .certificate-list {
@@ -431,15 +431,14 @@ section {
   flex-direction: column;
   gap: 16px;
 }
-.certificate-list li{
+.certificate-list li {
   font-size: 1em;
   list-style: disc;
-  margin:0 20px;
+  margin: 0 20px;
 }
-.certificate-list li span{
+.certificate-list li span {
   font-size: 0.8em;
 }
-
 
 /* footer 시작 */
 footer {
@@ -472,8 +471,7 @@ footer .sns-btn ul {
 }
 
 /* modal */
-body.active button{
-  
+body.active button {
 }
 .modal.active {
   display: block;
@@ -531,21 +529,21 @@ body.active button{
   height: calc(100% - 100px);
   backdrop-filter: blur(5px);
 }
-.modal .modal-info ul{
+.modal .modal-info ul {
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.modal .modal-info ul li{
+.modal .modal-info ul li {
   font-size: 1.2em;
   color: #2c363f;
   font-weight: 800;
 }
-.modal .modal-info ul li:nth-child(even){
+.modal .modal-info ul li:nth-child(even) {
   text-align: end;
 }
-.modal-info-txt{
+.modal-info-txt {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -580,10 +578,10 @@ body.active button{
     font-size: 0.8em;
     word-break: keep-all;
   }
-  .info-sec{
+  .info-sec {
     min-height: 50vh;
   }
-  .info-txt{
+  .info-txt {
     padding-top: 60px;
   }
   .info-txt h2 {
@@ -653,7 +651,7 @@ body.active button{
   footer ul {
     gap: 5px;
   }
-  .modal{
+  .modal {
     width: 670px;
   }
 }
