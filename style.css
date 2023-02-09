@@ -198,6 +198,36 @@ section {
   align-items: center;
   transform: rotate(180deg);
 }
+/* 스킬 스텍*/
+.skill-sec {
+  background-color: #eff0f4;
+  border-top: 1px solid #777;
+}
+.skill-sec h2 {
+  font-size: 28px;
+}
+.skill-list {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.skill-list > li > span {
+  width: 150px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.skill-list > li li {
+  list-style: circle;
+}
+.skill-list .frontend {
+  display: flex;
+  gap: 20px;
+}
+.skill-list .tools {
+  display: flex;
+  gap: 20px;
+}
 
 /* 프로젝트 섹션 */
 
@@ -386,35 +416,6 @@ section {
   background-color: #00bcd4;
 }
 
-.skill-sec {
-  background-color: #eff0f4;
-  border-top: 1px solid #777;
-}
-.skill-sec h2 {
-  font-size: 28px;
-}
-.skill-list {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.skill-list > li > span {
-  width: 150px;
-  font-size: 1.2em;
-  font-weight: 700;
-}
-.skill-list > li li {
-  list-style: circle;
-}
-.skill-list .frontend {
-  display: flex;
-  gap: 20px;
-}
-.skill-list .tools {
-  display: flex;
-  gap: 20px;
-}
 /* 학력 및 경력시작 */
 .certificate {
   display: flex;
