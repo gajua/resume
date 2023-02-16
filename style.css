@@ -120,14 +120,14 @@ section {
   color: #2c363f;
   -webkit-text-stroke: 1px #fff;
 }
-/* h2::before {
+h2::before {
   position: relative;
   content: "";
   display: block;
   width: 23%;
   height: 5px;
   background-color: #f98037;
-} */
+}
 
 .info-txt p {
   font-size: 1em;
@@ -175,8 +175,10 @@ section {
   position: relative;
   margin: 68px 0;
   right: 135px;
+  height: 100%;
   width: 365px;
   object-fit: contain;
+  border-radius: 10px;
 }
 .info-sec .top-btn {
   position: fixed;
