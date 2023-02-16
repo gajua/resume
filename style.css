@@ -95,12 +95,16 @@ section {
 .contact li {
   list-style: disc;
 }
+.contact li:hover a{
+  text-decoration: underline;
+}
 .contact li::marker {
   color: #f98037;
 }
 .contact li a {
   color: #2c363f;
   font-size: large;
+  text-decoration: none;
 }
 .info-txt {
   display: flex;
@@ -124,7 +128,7 @@ h2::before {
   position: relative;
   content: "";
   display: block;
-  width: 23%;
+  width: 20%;
   height: 5px;
   background-color: #f98037;
 }
