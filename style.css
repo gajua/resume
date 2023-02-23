@@ -171,6 +171,10 @@ section {
 .sns-btn ul li a {
   color: #2c363f;
   transition: 0.3s;
+ 
+}
+.sns-btn ul li a ion-icon{
+  transform: scale(1.5);
 }
 .sns-btn ul li a:hover {
   color: #f98037;
