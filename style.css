@@ -115,23 +115,23 @@ section {
 
 .info-txt h2 {
   position: relative;
-  font-size: 4.1em;
+  font-size: 3.84em;
   word-break: keep-all;
-  width: 700px;
+  width: 650px;
   letter-spacing: 0.1em;
   font-weight: 700;
   z-index: 10;
   color: #2c363f;
   -webkit-text-stroke: 1px #fff;
 }
-h2::before {
+/* h2::before {
   position: relative;
   content: "";
   display: block;
   width: 20%;
   height: 5px;
   background-color: #f98037;
-}
+} */
 
 .info-txt p {
   font-size: 1em;
@@ -178,9 +178,9 @@ h2::before {
 .info-sec .sewon-img {
   position: relative;
   margin: 68px 0;
-  right: 135px;
+  right: 45px;
   height: 100%;
-  width: 365px;
+  width: 305px;
   object-fit: contain;
   border-radius: 10px;
 }
@@ -597,7 +597,7 @@ body.active button {
     width: 459px;
   }
   .info-sec .sewon-img {
-    min-width: 130px;
+    min-width: 230px;
     top: 0px;
     right: 46px;
     /* border-radius: 50%; */
