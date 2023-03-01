@@ -95,7 +95,7 @@ section {
 .contact li {
   list-style: disc;
 }
-.contact li:hover a{
+.contact li:hover a {
   text-decoration: underline;
 }
 .contact li::marker {
@@ -171,9 +171,8 @@ section {
 .sns-btn ul li a {
   color: #2c363f;
   transition: 0.3s;
- 
 }
-.sns-btn ul li a ion-icon{
+.sns-btn ul li a ion-icon {
   transform: scale(1.5);
 }
 .sns-btn ul li a:hover {
@@ -207,6 +206,10 @@ section {
   justify-content: center;
   align-items: center;
   transform: rotate(180deg);
+  transition: 0.2s;
+}
+.info-sec .top-btn:hover {
+  transform: rotate(180deg) scale(1.1);
 }
 /* 스킬 스텍*/
 .skill-sec {
