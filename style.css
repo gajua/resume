@@ -503,7 +503,7 @@ body.active button {
   z-index: 1000;
   background-image: linear-gradient(transparent, rgba(255, 255, 255, 1)),
     url(./img/스터디사진.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: 0px 70px;
   background-repeat: no-repeat;
   transition: 0.2s;
